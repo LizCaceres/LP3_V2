@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tablas en html</title>
+        <style>
+            table, th, td {
+                border: 1px solid blue ;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+        </style>
+        <style>
+            #t2{
+                width: 100%;
+                background-color: rgb(188, 18, 182); 
+            }
+            #t2 tr:nth-child(even){
+                background-color: rgb(186, 240, 25);
+            }
+
+            #t2 tr:nth-child(odd){
+                background-color:rgb(51, 12, 180);
+            }
+
+            #t2 th{
+                color: whitesmoke;
+                background-color: rgb(23, 230, 40);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tablas en html</h1>
+        <table style="width: 100%;">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+
+            <tr>
+                <td>Liz</td>
+                <td>Cáceres</td>
+                <td>26</td>
+            </tr>
+
+            <tr>
+                <td>Sofia</td>
+                <td>Andrade</td>
+                <td>30</td>
+            </tr>
+        </table>
+
+        <h1>Tablas 2 en html</h1>
+        <table id="t2">
+            <tr> 
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+
+            <tr>
+                <td>Ruth</td>
+                <td>Martinez</td>
+                <td>27</td>
+            </tr>
+
+            <tr>
+                <td>Oscar</td>
+                <td>González</td>
+                <td>29</td>
+            </tr>
+        </table>    
+    </body>
+</html>

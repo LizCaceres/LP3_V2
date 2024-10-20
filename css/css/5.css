@@ -1,0 +1,33 @@
+/*Margin y Padding*/
+.box-1{
+    width: 200px;
+    height: 200px;
+    background: plum;
+    /*Forma Resumida*/
+    margin: 3em 2em 5em 1em;
+    /*Forma Específica*/
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-bottom: 3em;
+    margin-left: 4em;
+}
+
+.box-2{
+    width: 200px;
+    height: 200px;
+    background: gold;
+    border: 2px solid red; /*para poner bode con color*/
+    /*border: 2px hidden; (para poner borde por defecto)*/
+    /*Forma resumida*/
+    padding: 1em 2em 3em 4em; /*Le da una distancia entre el contenido de la caja y la caja*/
+    /*Forma Específica*/
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-bottom: 3em;
+    padding-left: 4em;
+}
+.box-2-contenido{
+    width: 50px;
+    height: 50px;
+    background: firebrick;
+}

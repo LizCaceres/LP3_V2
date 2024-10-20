@@ -1,0 +1,36 @@
+/*Agregar fuentes externas para el h1*/
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+
+/*Agregar Fuentes ingternas dentro del proyecto*/
+@font-face{
+font-family: Embassy;
+src: url(embassy-bt.ttf);
+}
+    
+/*Ejercicio 1 llamar a estilos css desde un archivo*/
+ 
+/*Estilos generales de las etiquetas (no recomendada)*/
+h1{
+    text-align: center; /*sirve para centrar el texto*/
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    font-family: Tangerine, serif;
+    text-decoration: underline;
+    color: blue;
+    background: black ;
+}
+
+a{
+    color: aqua;
+    background: grey;
+}
+
+p{
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    font-family: Embassy;
+    color: ghostwhite;
+    background: darkgreen;
+}
+
+body{
+    background: lawngreen ;
+}

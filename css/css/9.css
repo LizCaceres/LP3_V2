@@ -1,0 +1,19 @@
+/*Position
+fixed
+stiky
+z-index
+*/
+/*Position fixed*/
+body{
+    padding-top: 4em;
+}
+
+.menu{
+    background: aqua;
+    padding: .4em;
+    text-align: center;
+    font-size: 4em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

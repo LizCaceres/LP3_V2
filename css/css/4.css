@@ -1,0 +1,66 @@
+/*Maquetar con BEM - de manera correcta*/
+/*Para la maquetacion hay que tener en cuenta la
+gerarquia, empezar desde el titulo, cabecera, etc*/
+.titulo{
+    text-align: center;
+    font-size: 2cm;
+    background: violet;
+    height: 80px;
+}
+
+.cabecera{
+    background: coral;
+    height: 75px;
+}
+
+.cabecera-menu{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cabecera-menu__item{
+    line-height: 3;
+
+}
+
+.cabecera-menu__item:active{
+    background: red;
+}
+
+.cabecera-menu__link{
+    text-decoration: none;
+    font-size: 20;
+    color: green;
+}
+
+.principal{
+    background: teal;
+    height: 480px;
+}
+
+.piedepagina{
+    background: wheat;
+    height: 50px;
+}
+
+/*forma incorrecta de maquetar el menu en BEM
+nav ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    line-height: 3;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20;
+} */
