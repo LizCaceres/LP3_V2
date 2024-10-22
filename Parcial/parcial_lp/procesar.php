@@ -1,5 +1,5 @@
 <?php
-include 'db_connection.php';
+include 'bd_conection.php';
 
 $action = $_POST['action'];
 

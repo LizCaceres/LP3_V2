@@ -1,5 +1,5 @@
 <?php
-$enlace = mysqli_connect('localhost', 'root', ' ', 'parciallp3');
+$enlace = mysqli_connect('localhost', 'root', '', 'parciallp3');
 
 if (!$enlace) {
     die('Error de Conexión (' . mysqli_connect_errno() . ') '
