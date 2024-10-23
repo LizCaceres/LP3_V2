@@ -40,5 +40,43 @@
             </tr>
        <?php }?>
         </table>
+        <hr>
+        <h1>Editar Datos</h1>
+        <form method="GET">
+                <label for="id">Ingrese el ID a modificar</label>
+                <input type="text"name= "id"><br>
+                <input type="submit" value= "Enviar">
+        </form>
+        <?php 
+            if(isset($_GET['id'])){
+                $id = $_GET['id'];
+                $query = mysqli_query($conexion, "SELECT *FROM persona where id=$id");
+                while ($resultado=mysqli_fetch_assoc($query)){
+                    $id = $resultado ['id'];
+                    $nombre = $resultado ['nombre'];
+                    $apellido = $resultado ['apellido'];
+                }
+            }else{
+                $id ='';
+                $nombre ='';
+                $apellido ='';
+            }
+        ?>
+        <hr>
+        <form action="procesar.php" method= "POST">
+            <input type = "text" id = "id" name= "id" value ="<?=$id ?>"><br>
+            <label for="nombre">Nombre</label><br>
+            <input type = "text" id = "nombre" name= "nombre" value ="<?=$nombre ?>"><br>
+            <label for="apellido">Apellido</label><br>
+            <input type = "text" id = "apellido" name= "apellido" value="<?=$apellido ?>"><br>
+            <input type = "submit" name= "EnviarEditar" value = "Enviar Editar"><br> 
+        </form>
+        <hr>
+        <h1>Borrar datos</h1>
+            <form action="procesar.php" method ="POST">
+                <label for="id">Ingrese el id que deseas eliminar</label>
+                <input type="text" name= "id" autocomplete = off>
+                <input type="submit" name= "EnviarBorrar" value="EnviarBorrar">
+            </form>
 </body>
 </html>
