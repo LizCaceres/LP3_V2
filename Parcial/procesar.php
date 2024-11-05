@@ -16,7 +16,7 @@ $apellido = $_POST ['apellido'];
         
         if($query){
              echo "La inserción de datos fue exitosa!!"; ?>
-            <meta http-equiv="refresh" content="3, url=http://localhost/LP3_V2/Parcial/index.php">
+            <meta http-equiv="refresh" content="3, url=http://localhost/LP3_V2/Parcial">
     <?php }else{
         echo 'Problemas para insertar';
         }
@@ -32,7 +32,7 @@ elseif(isset ($_POST ['EnviarEditar'])){
     or die('error'.mysqli_error($conexion));
     if($query){
         echo "La modificación fue exitosa";?>
-        <meta http-equiv="refresh" content="3, http://localhost/LP3_V2/Parcial/index.php">
+        <meta http-equiv="refresh" content="3, url=http://localhost/LP3_V2/Parcial">
 
     <?php } else{
         echo "No se pudo realizar la modificación";
@@ -45,7 +45,7 @@ elseif(isset ($_POST ['EnviarBorrar'])){
 
     if($query){
         echo "Se elimino correctamente";?>
-        <meta http-equiv="refresh" content="3, url=http://localhost/LP3_V2/Parcial/index.php">
+        <meta http-equiv="refresh" content="3, url=http://localhost/LP3_V2/Parcial">
 
     <?php } else{
         echo "Problemas para eliminar";

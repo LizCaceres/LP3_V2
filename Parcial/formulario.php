@@ -3,6 +3,8 @@
 <html>
 <head>
     <meta charset = "UTF-8">
+    <link rel="stylesheet" href="formulario.css">
+
 </head>
 <body>
     <h1>Listado de Clientes nuevos</h1>
